@@ -1,6 +1,6 @@
 package com.fs.test.generate.data.annotation.base;
 
-import com.fs.test.generate.data.creator.DataCreator;
+import com.fs.test.generate.data.creator.BaseDataCreatorWithSource;
 import com.fs.test.generate.data.creator.JsonDataCreator;
 import com.fs.test.generate.data.source.DataSource;
 import com.fs.test.generate.data.strategy.GenerateStrategy;
@@ -24,12 +24,11 @@ public @interface JsonData {
      *
      * @return 数据产生器
      */
-    Class<? extends DataCreator> creator() default JsonDataCreator.class;
+    Class<? extends BaseDataCreatorWithSource> creator() default JsonDataCreator.class;
 
     /**
      * 数据源
      * <p>
-     * 默认为空
      *
      * @return 数据源
      */

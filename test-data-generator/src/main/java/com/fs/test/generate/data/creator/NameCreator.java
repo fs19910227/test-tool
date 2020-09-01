@@ -1,6 +1,5 @@
 package com.fs.test.generate.data.creator;
 
-import com.fs.test.generate.data.source.DataSource;
 import com.fs.test.generate.data.strategy.Strategy;
 import com.github.javafaker.Faker;
 import com.github.javafaker.Name;
@@ -26,8 +25,5 @@ public class NameCreator implements FakeDataCreator<String> {
         return faker.fullName();
     }
 
-    @Override
-    public void setDataSource(DataSource<String> dataSource) {
 
-    }
 }

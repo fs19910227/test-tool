@@ -1,6 +1,5 @@
 package com.fs.test.generate.data.creator;
 
-import com.fs.test.generate.data.source.DataSource;
 import com.fs.test.generate.data.strategy.Strategy;
 
 /**
@@ -18,10 +17,5 @@ public interface DataCreator<T> {
      */
     T fetchData(Strategy strategy);
 
-    /**
-     * 设置数据源
-     *
-     * @param dataSource 数据源
-     */
-    void setDataSource(DataSource<T> dataSource);
+
 }
